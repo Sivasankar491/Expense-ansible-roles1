@@ -1,0 +1,5 @@
+- name: prepare backend server
+  hosts: backend
+  become: yes
+  roles:
+  - backend
