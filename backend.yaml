@@ -1,5 +1,7 @@
 - name: prepare backend server
   hosts: backend
   become: yes
+  vars_files:
+  - /var/credential.yaml
   roles:
   - backend

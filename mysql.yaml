@@ -1,6 +1,8 @@
 - name: prepare mysql server
   hosts: mysql
   become: yes
+  vars_files:
+  - /var/credential.yaml
   roles: 
   - mysql
 
