@@ -1,0 +1,6 @@
+- name: prepare mysql server
+  hosts: mysql.kotte.site
+  become: yes
+  roles: 
+  - mysql
+
